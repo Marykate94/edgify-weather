@@ -1,39 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="assets/css/style.css" />
-        <title>Edgify Weather</title>
-    </head>
 
-    <body>
-        <!-- add header -->
-        <header>
-            Weather Dashboard
-        </header>
-        <!-- create container to combine city search column and list -->
-        <!-- create city search column-->
-        <div class="search-container">
-            <h2>Search A City:</h2>
-        </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Edgify Weather</title>
+</head>
+
+<body>
+    <!-- add header -->
+    <header>
+        Weather Dashboard
+    </header>
+    <!-- create container to combine city search column and list -->
+    <!-- create city search column-->
+    <div class="search-container">
+        <h2>Search A City:</h2>
+
         <div class="input">
-            <input id="citySearch" type="text" placeholder="Enter City Name Here">
-            <button id="searchBtn" type="button">Search</button>
+            <input id="city-search" type="text" placeholder="Enter City Name Here">
+            <button id="search-button" type="button">Search</button>
         </div>
 
 
         <!-- create a city list -->
+        <div class="search-list">
+            <ul id="city-list"></ul>
+        </div>
+    </div>
 
 
+    <!-- create current weather container -->
+    <div id="current-weather">
+        <div class="card">
+            <h3 id="current-city"></h3>
+            <img id="weather-icon"/>
+            <p class="card info">Temperature:</p>
+            <p class="card info">Wind Speed:</p>
+            <p class="card info">Humidity:</p>
+            <p class="card info">UV Index:</p>
+            <!-- create ids to connect to variables in js file -->
+        </div>
+    </div>
 
-        <!-- create current weather container -->
 
+    <!-- create 5 day weather forecast container -->
 
+    <script src="./assets/js/script.js"></script>
+</body>
 
-        <!-- create 5 day weather forecast container -->
-
-        <script src="./assets/js/script.js"></script>
-    </body>
 </html>
